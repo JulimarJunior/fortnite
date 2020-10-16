@@ -1,0 +1,153 @@
+:root {
+    --color01: #66b9e4;
+    --color02: #008efe;
+    --color03: #b8e4fd;
+}
+
+* {
+    max-width: 100%;
+}
+
+.timer {
+	font-size: 20px;
+}
+
+body, html {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira Sans', Arial, sans-serif;
+    background-color: var(--color03);
+    color: white;
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 0;
+}
+
+.row {
+	margin: 0;
+}
+
+.col-6 {
+	padding: 10px;
+}
+
+.legendary {
+	background: rgb(227,186,41);
+	background: -moz-radial-gradient(circle, rgba(227,186,41,1) 0%, rgba(255,113,0,1) 100%);
+	background: -webkit-radial-gradient(circle, rgba(227,186,41,1) 0%, rgba(255,113,0,1) 100%);
+	background: radial-gradient(circle, rgba(227,186,41,1) 0%, rgba(255,113,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3ba29",endColorstr="#ff7100",GradientType=1);
+}
+
+.uncommon {
+	background: rgb(28,223,42);
+	background: -moz-radial-gradient(circle, rgba(28,223,42,1) 0%, rgba(19,129,6,1) 100%);
+	background: -webkit-radial-gradient(circle, rgba(28,223,42,1) 0%, rgba(19,129,6,1) 100%);
+	background: radial-gradient(circle, rgba(28,223,42,1) 0%, rgba(19,129,6,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1cdf2a",endColorstr="#138106",GradientType=1);
+}
+
+.rare {
+	background: rgb(41,137,227);
+	background: -moz-radial-gradient(circle, rgba(41,137,227,1) 0%, rgba(0,71,255,1) 100%);
+	background: -webkit-radial-gradient(circle, rgba(41,137,227,1) 0%, rgba(0,71,255,1) 100%);
+	background: radial-gradient(circle, rgba(41,137,227,1) 0%, rgba(0,71,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2989e3",endColorstr="#0047ff",GradientType=1);
+}
+
+.commom {
+	background: rgb(154,154,154);
+	background: -moz-radial-gradient(circle, rgba(154,154,154,1) 0%, rgba(87,87,87,1) 100%);
+	background: -webkit-radial-gradient(circle, rgba(154,154,154,1) 0%, rgba(87,87,87,1) 100%);
+	background: radial-gradient(circle, rgba(154,154,154,1) 0%, rgba(87,87,87,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9a9a9a",endColorstr="#575757",GradientType=1);
+}
+
+.epic {
+	background: rgb(208,41,227);
+	background: -moz-radial-gradient(circle, rgba(208,41,227,1) 0%, rgba(99,11,111,1) 100%);
+	background: -webkit-radial-gradient(circle, rgba(208,41,227,1) 0%, rgba(99,11,111,1) 100%);
+	background: radial-gradient(circle, rgba(208,41,227,1) 0%, rgba(99,11,111,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d029e3",endColorstr="#630b6f",GradientType=1);
+}
+
+/* NAVBAR TOPO */
+.top-navbar {
+	width: 100%;
+	padding: 10px 10px 0px 10px;
+	background-color: var(--color02);
+	margin-bottom: 20px;
+	background: rgb(0,134,252);
+	background: -moz-linear-gradient(180deg, rgba(0,134,252,1) 0%, rgba(4,164,252,1) 100%);
+	background: -webkit-linear-gradient(180deg, rgba(0,134,252,1) 0%, rgba(4,164,252,1) 100%);
+	background: linear-gradient(180deg, rgba(0,134,252,1) 0%, rgba(4,164,252,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0086fc",endColorstr="#04a4fc",GradientType=1);
+}
+
+.top-navbar .col {
+	padding: 15px 0;
+	margin-top: 10px;
+}
+
+.top-navbar .col.active {
+	border-bottom: 5px solid white;
+}
+
+.top-navbar h1 {
+	font-size: 28px;
+	font-weight: 700;
+	margin-top: 10px;
+}
+
+/* SHOP */
+.item-shop .item {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.item-shop .infos-item {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	background-color: rgba(0,0,0,0.75);
+	padding: 5px;
+	width: 100%;
+	min-height: 45px;
+	border-radius: 0 0 10px 10px;
+}
+
+.item-shop img {
+	border-radius: 0 0 12.5px 12.5px;
+}
+
+.item-shop .infos-item h1 {
+	margin: 0;
+	font-size: 12px;
+}
+
+.item-shop h2 img {
+	width: 12px;
+	margin-top: -2px;
+	margin-right: 4px;
+}
+
+.item-shop h2 {
+	font-size: 12px;
+	position: absolute;
+	z-index: 9999;
+	top: 20px;
+	left: 20px;
+	background-color: rgba(0,0,0,0.75);
+	padding: 2.5px 5px 2.5px 5px;
+	border-radius: 100px;
+}
+
+.top-navbar .col {
+	cursor: pointer;
+}
