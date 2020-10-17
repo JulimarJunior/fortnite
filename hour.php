@@ -1,8 +1,7 @@
 <?php 
 	date_default_timezone_set('America/Sao_Paulo');	
 	$Date = date('Y-m-d 21:00');
-	$hour_end = date('Y-m-d 21:00', strtotime($Date. ' + 1 days'));
-	$hour_end = date_create('16-10-2020 21:00');
+	$hour_end = date_create(date('Y-m-d 21:00', strtotime($Date. ' + 1 days')));
 	$hour_start = date_create(date('d-m-Y H:i'));
 
 	$interval = date_diff($hour_start, $hour_end);
